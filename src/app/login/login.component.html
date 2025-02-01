@@ -1,10 +1,22 @@
-<div class="container d-flex justify-content-center align-items-center flex-column">
+<div class="container d-flex justify-content-center align-items-center flex-column" style="height: 100vh;">
 
     <h1>Login</h1>
     <p> Explore 100+ recipie in your hand </p>
     <div style="width: 400px;" class="shadow boredr rounded p-5 mt-5">
         <div class="mb-3 text-center">
-            <h3><i class="fa-solid fa-utensils fa-flip me-3 fs-2"></i></h3>
+            <h3><i class="fa-solid fa-utensils fa-flip me-3 fs-2"></i>Recipe-World</h3>
         </div>
+
+        <form>
+            <div class="mb-3 text-center">
+                <input type="email" name="email" formControlName="email" placeholder="Enter your Email" class="form-control">
+            </div>
+            <div class="mb-3 text-center">
+                <input type="password" name="password" formControlName="password" placeholder="Enter your Password" class="form-control">
+            </div>
+            <div class="d-grid">
+                <button class="btn btn-success">Login</button>
+            </div>
+        </form>
     </div>
 </div>
