@@ -11,6 +11,6 @@ export class ApiService {
 
   // get all recipes
   getAllRecipesAPI(){
-    return this.http.get
+    return this.http.get(`${this.server_url}/all-recipes`)
   }
 }

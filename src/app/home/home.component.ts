@@ -14,15 +14,15 @@ export class HomeComponent {
 
   constructor(private api:ApiService){}
 
-  // ngOnInit(){
-  //   this.getAllHomeRecipes()
-  // }
+  ngOnInit(){
+    this.getAllHomeRecipes()
+  }
 
-  // getAllHomeRecipes(){
-  //   this.api.getAllRecipesAPI().subscribe((res:any)=>{
-  //     this.homeRecipes.res.slice(0,6)
-  //     console.log(this.homeRecipes);
+  getAllHomeRecipes(){
+    this.api.getAllRecipesAPI().subscribe((res:any)=>{
+      this.homeRecipes.res.slice(0,6)
+      console.log(this.homeRecipes);
       
-  //   })
-  // }
+    })
+  }
 }

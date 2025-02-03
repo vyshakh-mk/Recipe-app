@@ -22,13 +22,18 @@
             <p>Most popular recipes of the week</p>
             <a routerLink="/recipes">view all</a>
         </div>
+
         <div class="row my-3">
-            <div class="p-3">
-                <img width="20%" src="https://cdn.dummyjson.com/recipe-images/1.webp" alt="">
-                <div class="card-body">
-                  <h4>Name</h4>
+        @for (recipes of homeRecipes; track $index) {
+            <div class="col-lg-4 d-flex">
+                <div class="p-3">
+                    <img width="20%" [src]="recipes.image" alt="">
+                    <div class="card-body">
+                      <h4>{{recipes.name}}</h4>
+                    </div>
                 </div>
             </div>
+        }
         </div>
         <div style="height: 400px; background-repeat: no-repeat; background-size: cover; background-image: url(https://cdn.pixabay.com/photo/2022/04/30/19/12/cooking-banner-7166200_640.jpg);" class="row align-items-center my-5">
             <div class="col-lg-6"> </div>
